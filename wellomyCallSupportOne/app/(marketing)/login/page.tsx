@@ -100,8 +100,8 @@ export default function LoginPage() {
                 </div>
                 {/*{errors.email && (
                   <p className="text-red-500 text-sm">{errors.email}</p>
-                )}
-              </div>*/}
+                )}*/}
+              </div>
 
               <div className="space-y-2">
                 <div className="flex justify-between">
@@ -119,9 +119,7 @@ export default function LoginPage() {
                     id="password"
                     type="password"
                     placeholder="Password"
-                    //className={`pl-10 ${
-                      errors.password ? "border-red-500" : ""
-                    }`}
+                    //className={`pl-10 ${errors.password ? "border-red-500" : ""
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />
