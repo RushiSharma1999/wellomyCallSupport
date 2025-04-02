@@ -93,15 +93,15 @@ export default function LoginPage() {
                     id="email"
                     type="email"
                     placeholder="Email"
-                    className={`pl-10 ${errors.email ? "border-red-500" : ""}`}
+                    //className={`pl-10 ${errors.email ? "border-red-500" : ""}`}
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
-                {errors.email && (
+                {/*{errors.email && (
                   <p className="text-red-500 text-sm">{errors.email}</p>
                 )}
-              </div>
+              </div>*/}
 
               <div className="space-y-2">
                 <div className="flex justify-between">
@@ -119,16 +119,16 @@ export default function LoginPage() {
                     id="password"
                     type="password"
                     placeholder="Password"
-                    className={`pl-10 ${
+                    //className={`pl-10 ${
                       errors.password ? "border-red-500" : ""
                     }`}
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
-                {errors.password && (
+                {/*{errors.password && (
                   <p className="text-red-500 text-sm">{errors.password}</p>
-                )}
+                )}*/}
               </div>
 
               <Button
