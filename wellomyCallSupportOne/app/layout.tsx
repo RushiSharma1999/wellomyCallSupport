@@ -13,9 +13,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Providers>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
+        </Providers>
       </body>
     </html>
   )
@@ -24,6 +26,8 @@ export default function RootLayout({
 
 
 import './globals.css'
+import { Provider } from "@radix-ui/react-toast"
+import { Providers } from "./providers"
 
 export const metadata = {
       generator: 'v0.dev'
